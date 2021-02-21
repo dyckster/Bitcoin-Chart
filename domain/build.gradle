@@ -1,0 +1,14 @@
+apply plugin: 'com.android.library'
+apply from: "$rootDir/app/module.gradle"
+
+dependencies {
+    implementation(
+            libs.rx2.java,
+            libs.rx2.kotlin,
+            libs.dagger.runtime
+    )
+
+    kapt(
+            libs.dagger.compiler
+    )
+}

@@ -1,0 +1,43 @@
+apply plugin: 'com.android.library'
+apply from: "$rootDir/app/module.gradle"
+
+dependencies {
+    implementation(
+            // Android
+            libs.androidx.appCompat,
+            libs.androidx.fragment,
+            libs.androidx.material,
+
+            libs.chart,
+            libs.timber,
+
+            // Threading
+            libs.rx2.java,
+            libs.rx2.android,
+
+            // Dependency Injection
+            libs.dagger.runtime,
+            libs.dagger.android,
+            libs.dagger.androidSupport
+    )
+
+    api(
+            libs.moxy.runtime,
+            libs.moxy.androidx,
+            libs.moxy.material,
+            libs.moxy.ktx
+    )
+
+    implementation(
+            project(':domain')
+    )
+    testImplementation(
+            project(':test-utils')
+    )
+
+    kapt(
+            libs.moxy.compiler,
+            libs.dagger.androidProcessor,
+            libs.dagger.compiler
+    )
+}

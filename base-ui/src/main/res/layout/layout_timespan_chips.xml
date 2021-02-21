@@ -1,0 +1,46 @@
+<com.google.android.material.chip.ChipGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chart_timespan_group"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="16dp"
+    app:selectionRequired="true"
+    app:singleSelection="true">
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chart_timespan_week"
+        style="@style/UiKitChipStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timespan_week" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chart_timespan_month"
+        style="@style/UiKitChipStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timespan_month" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chart_timespan_year"
+        style="@style/UiKitChipStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timespan_year" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chart_timespan_3_years"
+        style="@style/UiKitChipStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timespan_years_3" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chart_timespan_5_years"
+        style="@style/UiKitChipStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timespan_years_5" />
+</com.google.android.material.chip.ChipGroup>

@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/chart_finger_emoji"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:contentDescription="@string/cd_chart_drag_tip"
+        android:src="@drawable/emoji_finger_up" />
+
+    <TextView
+        android:id="@+id/chart_drag_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/chart_finger_emoji"
+        android:text="@string/chart_drag_tip"
+        android:textColor="@color/textColorPrimary" />
+
+    <TextView
+        android:id="@+id/selected_value_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:paddingHorizontal="16dp"
+        android:textColor="@color/textColorSecondary"
+        android:textSize="12sp"
+        tools:text="@tools:sample/date/mmddyy" />
+
+    <TextView
+        android:id="@+id/selected_value_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selected_value_date"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:fontFamily="sans-serif-black"
+        android:paddingHorizontal="16dp"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="16sp"
+        tools:text="12,000,000" />
+</RelativeLayout>

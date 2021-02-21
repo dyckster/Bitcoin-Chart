@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/chart_toolbar"
+            style="@style/UiKitToolbarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/chart_info_group"
+            layout="@layout/layout_chart_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chart_toolbar" />
+
+        <View
+            style="@style/UiKitDivider"
+            android:layout_below="@id/chart_info_group" />
+
+        <include
+            android:id="@+id/linear_chart_group"
+            layout="@layout/layout_linear_chart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chart_info_group" />
+
+        <View
+            style="@style/UiKitDivider"
+            android:layout_below="@id/linear_chart_group" />
+
+        <include
+            android:id="@+id/chart_timespan_group"
+            layout="@layout/layout_timespan_chips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear_chart_group" />
+
+        <TextView
+            android:id="@+id/chart_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chart_timespan_group"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="16sp"
+            tools:text="@tools:sample/lorem/random" />
+
+        <include
+            android:id="@+id/chart_error_group"
+            layout="@layout/layout_chart_error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/chart_toolbar"
+            android:visibility="gone" />
+    </RelativeLayout>
+</ScrollView>

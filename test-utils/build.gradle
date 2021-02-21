@@ -1,0 +1,18 @@
+apply plugin: 'com.android.library'
+apply from: "$rootDir/app/module.gradle"
+
+dependencies {
+    implementation(
+            libs.rx2.java,
+            libs.rx2.android
+    )
+
+    api(
+            testImplementation('junit:junit:4.13'),
+            testImplementation('androidx.test:core:1.2.0'),
+            testImplementation('org.mockito:mockito-core:2.24.5'),
+            testImplementation('org.junit.jupiter:junit-jupiter:5.6.0'),
+            testImplementation('com.willowtreeapps.assertk:assertk-jvm:0.21'),
+            testImplementation("io.mockk:mockk:1.9.2")
+    )
+}

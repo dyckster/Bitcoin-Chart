@@ -1,0 +1,43 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
+apply plugin: 'com.android.application'
+apply from: "$rootDir/app/module.gradle"
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.dyckster.bitcoin.chart"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+}
+
+dependencies {
+    implementation(
+            libs.androidx.core,
+            libs.androidx.appCompat,
+
+            libs.dagger.runtime,
+            libs.dagger.android,
+            libs.dagger.androidSupport
+    )
+    
+    implementation(
+            project(':base-ui'),
+            project(':domain'),
+            project(':data')
+    )
+
+    kapt(
+            libs.dagger.androidProcessor,
+            libs.dagger.compiler
+    )
+}

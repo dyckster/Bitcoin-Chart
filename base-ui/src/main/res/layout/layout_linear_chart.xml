@@ -1,0 +1,21 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/chart_height">
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/bitcoin_chart"
+        android:layout_width="match_parent"
+        android:layout_height="242dp" />
+
+    <FrameLayout
+        android:id="@+id/chart_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ProgressBar
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center" />
+    </FrameLayout>
+</FrameLayout>

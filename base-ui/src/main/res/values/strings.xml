@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Blockchain Charts</string>
+    <string name="chart_type_trade_volume">Exchange Trade Volume (USD)</string>
+    <string name="chart_type_circulation">Total Circulating Bitcoin</string>
+    <string name="timespan_week">1 week</string>
+    <string name="timespan_month">1 month</string>
+    <string name="timespan_year">1 year</string>
+    <string name="timespan_years_3">3 years</string>
+    <string name="chart_drag_tip">Drag the chart to\nsee historical data</string>
+    <string name="cd_chart_drag_tip">Index finger pointing upward, showing the back of the hand while doing so.</string>
+    <string name="chart_type_market_price">Market Price</string>
+    <string name="chart_type_market_cap">Market Capitalization</string>
+    <string name="chart_type_transaction_num">Total Number of Transactions</string>
+    <string name="timespan_years_5">5 years</string>
+    <string name="error_title">An error occurred</string>
+    <string name="action_retry">Retry</string>
+    <string name="error_chart_fail">Failed to load chart. Please try again.</string>
+    <string name="cd_back">Back</string>
+</resources>

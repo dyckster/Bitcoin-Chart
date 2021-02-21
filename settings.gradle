@@ -1,0 +1,6 @@
+include ':data'
+include ':domain'
+include ':base-ui'
+include ':app'
+include ':test-utils'
+rootProject.name = "TTS"

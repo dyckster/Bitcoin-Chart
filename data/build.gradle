@@ -1,0 +1,29 @@
+apply plugin: 'com.android.library'
+apply from: "$rootDir/app/module.gradle"
+
+dependencies {
+    implementation(
+            libs.gson,
+            libs.rx2.java,
+            libs.rx2.kotlin,
+            libs.dagger.runtime
+    )
+
+    api(
+            libs.retrofit.runtime,
+            libs.retrofit.gson,
+            libs.retrofit.rxJava,
+            libs.retrofit.interceptor
+    )
+    
+    implementation(
+            project(':domain')
+    )
+    testImplementation(
+            project(':test-utils')
+    )
+
+    kapt(
+            libs.dagger.compiler
+    )
+}
