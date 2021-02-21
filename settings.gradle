@@ -3,4 +3,4 @@ include ':domain'
 include ':base-ui'
 include ':app'
 include ':test-utils'
-rootProject.name = "TTS"
+rootProject.name = "Bitcoin-Chart"
