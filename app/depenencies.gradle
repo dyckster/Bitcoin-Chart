@@ -43,6 +43,10 @@ moxy.compiler = "com.github.moxy-community:moxy-compiler:$moxyVersion"
 moxy.ktx = "com.github.moxy-community:moxy-ktx:$moxyVersion"
 libs.moxy = moxy
 
+def uiTest = [:]
+uiTest.kaspresso = "com.kaspersky.android-components:kaspresso:1.2.0"
+libs.uiTest = uiTest
+
 libs.gson = "com.google.code.gson:gson:2.8.5"
 libs.timber = "com.jakewharton.timber:timber:4.7.1"
 libs.chart = 'com.github.PhilJay:MPAndroidChart:v3.1.0'

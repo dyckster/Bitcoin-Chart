@@ -31,13 +31,13 @@ dependencies {
     implementation(
             project(':domain')
     )
-    testImplementation(
-            project(':test-utils')
-    )
-
     kapt(
             libs.moxy.compiler,
             libs.dagger.androidProcessor,
             libs.dagger.compiler
+    )
+
+    testImplementation(
+            project(':test-utils')
     )
 }

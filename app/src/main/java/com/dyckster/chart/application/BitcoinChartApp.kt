@@ -6,6 +6,10 @@ import dagger.android.support.DaggerApplication
 
 class BitcoinChartApp : DaggerApplication() {
 
+    override fun onCreate() {
+        super.onCreate()
+    }
+
     override fun applicationInjector(): AndroidInjector<out DaggerApplication> {
         return DaggerAppComponent.factory().create(this)
     }

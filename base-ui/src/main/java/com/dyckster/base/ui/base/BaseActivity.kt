@@ -1,11 +1,6 @@
 package com.dyckster.base.ui.base
 
-import android.app.Activity
-import android.content.Context
-import android.content.Intent
 import android.os.Bundle
-import android.view.MenuItem
-import androidx.annotation.CallSuper
 import androidx.annotation.LayoutRes
 import dagger.android.AndroidInjection
 import dagger.android.AndroidInjector
