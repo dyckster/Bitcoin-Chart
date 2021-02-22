@@ -53,7 +53,7 @@ internal class BitcoinChartListPresenterTest {
     @Test
     fun `should open chart screen on type click`() {
         val chartType = ChartType.TRANSACTION_NUM
-        val chartTypeUiModel = ChartTypeUiModel("name")
+        val chartTypeUiModel = ChartTypeUiModel("name", "description")
         val types = listOf(chartType)
         every { chartTypeUiMapper.map(chartType) } returns chartTypeUiModel
         every { bitcoinChartTypeListGetterUseCase.getChartTypes() } returns types

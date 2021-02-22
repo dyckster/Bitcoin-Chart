@@ -8,6 +8,7 @@
         android:id="@+id/chart_finger_emoji"
         android:layout_width="32dp"
         android:layout_height="32dp"
+        android:layout_alignParentStart="true"
         android:contentDescription="@string/cd_chart_drag_tip"
         android:src="@drawable/emoji_finger_up" />
 
@@ -18,7 +19,7 @@
         android:layout_marginStart="16dp"
         android:layout_toEndOf="@id/chart_finger_emoji"
         android:text="@string/chart_drag_tip"
-        android:textColor="@color/textColorPrimary" />
+        android:textAppearance="@style/UiKitTextStyle.Body.Small" />
 
     <TextView
         android:id="@+id/selected_value_date"
@@ -26,9 +27,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_gravity="end"
+        android:layout_toEndOf="@id/chart_drag_tip"
+        android:gravity="end"
         android:paddingHorizontal="16dp"
-        android:textColor="@color/textColorSecondary"
-        android:textSize="12sp"
+        android:textAppearance="@style/UiKitTextStyle.Caption"
         tools:text="@tools:sample/date/mmddyy" />
 
     <TextView
@@ -38,9 +40,7 @@
         android:layout_below="@id/selected_value_date"
         android:layout_alignParentEnd="true"
         android:layout_gravity="end"
-        android:fontFamily="sans-serif-black"
         android:paddingHorizontal="16dp"
-        android:textColor="@color/textColorPrimary"
-        android:textSize="16sp"
+        android:textAppearance="@style/UiKitTextStyle.Amount"
         tools:text="12,000,000" />
 </RelativeLayout>

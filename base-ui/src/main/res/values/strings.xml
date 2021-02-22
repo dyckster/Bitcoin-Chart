@@ -1,19 +1,31 @@
 <resources>
     <string name="app_name">Blockchain Charts</string>
-    <string name="chart_type_trade_volume">Exchange Trade Volume (USD)</string>
-    <string name="chart_type_circulation">Total Circulating Bitcoin</string>
+
     <string name="timespan_week">1 week</string>
     <string name="timespan_month">1 month</string>
     <string name="timespan_year">1 year</string>
     <string name="timespan_years_3">3 years</string>
-    <string name="chart_drag_tip">Drag the chart to\nsee historical data</string>
-    <string name="cd_chart_drag_tip">Index finger pointing upward, showing the back of the hand while doing so.</string>
-    <string name="chart_type_market_price">Market Price</string>
-    <string name="chart_type_market_cap">Market Capitalization</string>
-    <string name="chart_type_transaction_num">Total Number of Transactions</string>
     <string name="timespan_years_5">5 years</string>
+
+    <string name="chart_drag_tip">Drag the chart to\nsee historical data</string>
+
     <string name="error_title">An error occurred</string>
     <string name="action_retry">Retry</string>
     <string name="error_chart_fail">Failed to load chart. Please try again.</string>
+
+    <string name="cd_chart_drag_tip">Index finger pointing upward, showing the back of the hand while doing so.</string>
     <string name="cd_back">Back</string>
+    <string name="cd_chevron">Icon calling to click action</string>
+
+    <string name="chart_type_title_market_price">Market Price</string>
+    <string name="chart_type_title_market_cap">Market Capitalization</string>
+    <string name="chart_type_title_transaction_num">Total Number of Transactions</string>
+    <string name="chart_type_title_trade_volume">Exchange Trade Volume (USD)</string>
+    <string name="chart_type_title_circulation">Total Circulating Bitcoin</string>
+
+    <string name="chart_type_description_circulation">The total number of mined bitcoin that are currently circulating on the network</string>
+    <string name="chart_type_description_trade_volume">The total USD value of trading volume on major bitcoin exchanges</string>
+    <string name="chart_type_description_market_price">The average USD market price across major bitcoin exchanges</string>
+    <string name="chart_type_description_market_cap">The total USD value of bitcoin in circulation</string>
+    <string name="chart_type_description_transaction_num">The total number of transactions on the blockchain</string>
 </resources>

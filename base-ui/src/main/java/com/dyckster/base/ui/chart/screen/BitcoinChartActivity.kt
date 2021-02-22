@@ -146,6 +146,7 @@ class BitcoinChartActivity : BaseActivity(R.layout.activity_chart), BitcoinChart
         lineDataSet.setDrawFilled(true)
         lineDataSet.setDrawCircles(false)
         lineDataSet.setDrawValues(false)
+        lineDataSet.highLightColor = ContextCompat.getColor(this, model.chartColor)
         lineDataSet.setDrawHorizontalHighlightIndicator(false)
         lineDataSet.lineWidth = model.chartLineWidth
         lineDataSet.fillColor = ContextCompat.getColor(this, model.chartColor)
@@ -163,8 +164,8 @@ class BitcoinChartActivity : BaseActivity(R.layout.activity_chart), BitcoinChart
     }
 
     override fun showSelectedValue(value: SelectedValueUiModel) {
-        dragTipEmoji.makeGone()
-        dragTipText.makeGone()
+        dragTipEmoji.makeInvisible()
+        dragTipText.makeInvisible()
 
         selectedValueDate.text = value.date
         selectedValueDate.makeVisible()

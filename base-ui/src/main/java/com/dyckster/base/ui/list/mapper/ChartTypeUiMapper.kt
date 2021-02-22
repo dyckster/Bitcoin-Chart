@@ -12,23 +12,51 @@ class ChartTypeUiMapper
 ) {
 
     fun map(chartType: ChartType): ChartTypeUiModel {
-        val chartName = when (chartType) {
+        val chartName = createChartName(chartType)
+        val chartDescription = createChartDescription(chartType)
+        return ChartTypeUiModel(
+            chartName = chartName,
+            chartDescription = chartDescription
+        )
+    }
+
+    private fun createChartName(chartType: ChartType): String {
+        return when (chartType) {
             ChartType.BITCOIN_CIRCULATION -> {
-                resourcesWrapper.getString(R.string.chart_type_circulation)
+                resourcesWrapper.getString(R.string.chart_type_title_circulation)
             }
             ChartType.TRADE_VOLUME -> {
-                resourcesWrapper.getString(R.string.chart_type_trade_volume)
+                resourcesWrapper.getString(R.string.chart_type_title_trade_volume)
             }
             ChartType.MARKET_PRICE -> {
-                resourcesWrapper.getString(R.string.chart_type_market_price)
+                resourcesWrapper.getString(R.string.chart_type_title_market_price)
             }
             ChartType.MARKET_CAP -> {
-                resourcesWrapper.getString(R.string.chart_type_market_cap)
+                resourcesWrapper.getString(R.string.chart_type_title_market_cap)
             }
             ChartType.TRANSACTION_NUM -> {
-                resourcesWrapper.getString(R.string.chart_type_transaction_num)
+                resourcesWrapper.getString(R.string.chart_type_title_transaction_num)
             }
         }
-        return ChartTypeUiModel(chartName = chartName)
+    }
+
+    private fun createChartDescription(chartType: ChartType): String {
+        return when (chartType) {
+            ChartType.BITCOIN_CIRCULATION -> {
+                resourcesWrapper.getString(R.string.chart_type_description_circulation)
+            }
+            ChartType.TRADE_VOLUME -> {
+                resourcesWrapper.getString(R.string.chart_type_description_trade_volume)
+            }
+            ChartType.MARKET_PRICE -> {
+                resourcesWrapper.getString(R.string.chart_type_description_market_price)
+            }
+            ChartType.MARKET_CAP -> {
+                resourcesWrapper.getString(R.string.chart_type_description_market_cap)
+            }
+            ChartType.TRANSACTION_NUM -> {
+                resourcesWrapper.getString(R.string.chart_type_description_transaction_num)
+            }
+        }
     }
 }

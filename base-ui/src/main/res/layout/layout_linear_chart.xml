@@ -5,7 +5,7 @@
     <com.github.mikephil.charting.charts.LineChart
         android:id="@+id/bitcoin_chart"
         android:layout_width="match_parent"
-        android:layout_height="242dp" />
+        android:layout_height="@dimen/chart_height" />
 
     <FrameLayout
         android:id="@+id/chart_progress"

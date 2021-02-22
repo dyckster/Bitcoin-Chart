@@ -18,10 +18,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="16dp"
-        android:fontFamily="sans-serif-medium"
         android:text="@string/error_title"
-        android:textColor="@color/textColorPrimary"
-        android:textSize="16sp" />
+        android:textAppearance="@style/UiKitTextStyle.Header" />
 
     <TextView
         android:id="@+id/error_group_description"
@@ -30,7 +28,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="4dp"
         android:paddingHorizontal="16dp"
-        android:textColor="@color/textColorSecondary"
+        android:textAppearance="@style/UiKitTextStyle.Body"
         tools:text="Failed to load chart. Please try again" />
 
     <com.google.android.material.button.MaterialButton
