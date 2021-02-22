@@ -19,14 +19,6 @@ abstract class ActivityStarter {
     fun start(context: Context, initParams: InitParams? = null) {
         context.startActivity(instance(context, initParams))
     }
-
-    fun startForResult(
-        activity: Activity,
-        requestCode: Int,
-        initParams: InitParams? = null
-    ) {
-        activity.startActivityForResult(instance(activity, initParams), requestCode)
-    }
 }
 
 fun <T : InitParams> Activity.extractInitParams(): T {
