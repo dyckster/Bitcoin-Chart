@@ -1,7 +1,6 @@
 package com.dyckster.base.ui.chart.model
 
 import androidx.annotation.ColorRes
-import com.dyckster.base.ui.chart.mapper.ChartEntry
 import com.dyckster.domain.model.Timespan
 
 data class ChartUiModel(

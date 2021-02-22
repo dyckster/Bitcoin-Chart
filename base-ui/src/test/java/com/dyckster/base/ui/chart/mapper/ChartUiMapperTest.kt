@@ -3,6 +3,7 @@ package com.dyckster.base.ui.chart.mapper
 import assertk.assertThat
 import assertk.assertions.isEqualTo
 import com.dyckster.base.ui.R
+import com.dyckster.base.ui.chart.model.ChartEntry
 import com.dyckster.base.ui.chart.model.ChartUiModel
 import com.dyckster.domain.model.ChartModel
 import com.dyckster.domain.model.ChartValueModel

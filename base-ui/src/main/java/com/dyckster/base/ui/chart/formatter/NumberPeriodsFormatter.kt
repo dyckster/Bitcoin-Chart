@@ -4,9 +4,12 @@ import javax.inject.Inject
 
 private const val BILLION = 1_000_000_000
 private const val BILLION_FORMAT = "%sb"
+
 private const val MILLION = 1_000_000
 private const val MILLION_FORMAT = "%sm"
+
 private const val THOUSAND = 1_000
+
 private const val THOUSAND_FORMAT = "%sk"
 private const val NO_FORMATTING = "%s"
 
@@ -22,9 +25,15 @@ class NumberPeriodsFormatter
             value >= THOUSAND -> THOUSAND_FORMAT
             else -> NO_FORMATTING
         }
-        val formatterNumber = prepareNumberForFormat(value)
+        val numberWithDecimal = prepareNumberForFormat(value)
+        val isResultRound = checkIfRound(numberWithDecimal)
+        val numberToFormat = if (isResultRound) {
+            numberWithDecimal.toInt()
+        } else {
+            numberWithDecimal
+        }
 
-        return numberFormat.format(formatterNumber)
+        return numberFormat.format(numberToFormat)
     }
 
     private fun prepareNumberForFormat(value: Long): Double {
@@ -37,5 +46,9 @@ class NumberPeriodsFormatter
 
         val divisionResult = value.toDouble() / divisionPeriod.toDouble()
         return decimalPlaceFormatter.format(divisionResult, decimalPlace = 2)
+    }
+
+    private fun checkIfRound(number: Double): Boolean {
+        return (number * 100) % 10 == 0.0
     }
 }

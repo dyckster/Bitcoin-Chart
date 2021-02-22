@@ -1,4 +1,4 @@
-package com.dyckster.base.ui.chart.mapper
+package com.dyckster.base.ui.chart.model
 
 import com.github.mikephil.charting.data.Entry
 import java.math.BigDecimal
