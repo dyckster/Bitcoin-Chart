@@ -1,10 +1,7 @@
-#### How to run
-
-Download and run BitcoinChart.apk inside the root folder of the repository.
 
 #### Archtecture
 
-For the architecture I decided to use CLEAN architecture with MVP used as UI architectural pattern. The repository class is used to separate network fetching and response model mapping. Use cases are implemented by Interactor, which is mainly used as a proxy to repository, due to the simplicity of the logic inside it. The presenter calls the use case to fetch recipes. From my previous experience, I found this architecture very scalable, testable, and maintainable.
+For the architecture I decided to use CLEAN architecture with MVP used as UI architectural pattern. The repository class is used to separate network fetching and response model mapping. Use cases are implemented by Interactor, which is mainly used as a proxy to repository, due to the simplicity of the logic inside it. The presenter calls the use case to fetch recipes.
 
 ![Architecture diagram](arch_diagram.png)
 
