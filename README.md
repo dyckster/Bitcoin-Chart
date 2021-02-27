@@ -1,3 +1,6 @@
+####
+
+Application to view Bitcoin statistics from https://www.blockchain.com. 
 
 #### Archtecture
 
